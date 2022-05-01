@@ -13,12 +13,3 @@ function closeMenu(){
   }
 }
 
-//controls slider
-
-let totalSlides = document.querySelectorAll('.slider-itens').length;
-
-document.querySelector('.slider').style.width = 'calc(100vw * ${totalSlides})';
-
-document.querySelector('.controls').style.height = 
-`${document.querySelector('.slider-container').clientHeight}px`;
-

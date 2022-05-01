@@ -216,6 +216,29 @@
   font-size: 2rem;
   font-weight: 600;
 }
+.grid-skillst div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  
+}
+
+.grid-skillst div p{
+  font-family: 'Roboto', sans-serif;
+  color: #5c666f;
+  text-transform:capitalize;
+  font-size: .9rem;
+  text-align: left;
+}
+
+.grid-skillst div h3{
+  font-size: 1.3rem;
+  color: #343a40;
+  text-transform: capitalize;
+  margin-bottom: .2rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
 
 
 
@@ -374,9 +397,4 @@
     text-align: left;
   }
 
-  .experience{
-    width: 80vw;
-    height: 100vh;
-    background-color: blue;
-  }
 }
