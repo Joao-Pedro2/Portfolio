@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .header{
@@ -216,52 +217,14 @@
   font-weight: 600;
 }
 
-.experience{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.slider-container{
-  overflow: hidden;
-}
-.slider{
-  height: 100vh;
-  display: flex;
-  background-color: #c1c1c1;
-}
-
-.slider-itens{
-  display:flex;
-  flex-wrap: wrap;
-  width: 100vw;
-}
-
-.slider-itens img{
-  width: 100vw;
-}
-
-.controls{
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.buttons{
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 25px;
-}
-
-
 
 
 
 @media screen and (min-width:620px) {
-  body{ display: flex;}
+  body{ 
+    display: flex;
+    overflow: hidden;
+  }
   .header{
     width: 20vw;
     height: 100vh;
@@ -306,14 +269,13 @@
 
   .about{
     width: 70vw;
-    height: 100vh;
+    height: 80vh;
   }
   .alignment{
     display: flex;
     padding: 2rem;
     flex-wrap: wrap;
   }
-
   .img-profile{
     display: none;
   }
@@ -332,5 +294,89 @@
 
   .contact{
     margin: 4rem 0 0 0;
+    text-align: left;
+  }
+
+  .contact a img{
+    margin: 0 1.4rem 0 0;
+  }
+
+  .education{
+    justify-content: left;
+    margin: 0;
+  }
+  .education .alignment{
+    display: flex;
+    flex-direction: column;
+  }
+  .educ-title{
+    text-align: left;
+    margin: 0;
+  }
    
+  .grid-education{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin-top: 3rem;
+  }
+
+  .grid-education div{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .alignment{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills-grid{
+    display: flex;
+    margin: 5rem 0 0 0;
+  }
+
+  .skills-grid div{
+    display: block;
+    margin: 0 1.3rem 0 0;
+  }
+  .title-skills {
+    text-align: left;
+    margin: 0;
+  }
+  .grid-skillst div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+  }
+
+  .grid-skillst div p{
+    font-family: 'Roboto', sans-serif;
+    color: #5c666f;
+    text-transform:capitalize;
+    font-size: .9rem;
+    text-align: left;
+  }
+  
+  .grid-skillst div h3{
+    font-size: 1.3rem;
+    color: #343a40;
+    text-transform: capitalize;
+    margin-bottom: .2rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+  }
+
+  .experience{
+    width: 80vw;
+    height: 100vh;
+    background-color: blue;
+  }
 }
